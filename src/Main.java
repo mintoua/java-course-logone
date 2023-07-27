@@ -1,18 +1,24 @@
 public class Main {
     public static void main(String[] args) {
-
+/*
+//int - integer entier
         int y = 5;
+        int z;
+        z = 10;
         short shortY = 5;
         byte byteY = 1;
 
-        char lettre_A = 'A' ;
+        char lettre_A = 'A' ;  // char =  character
 
-        float moyenne = 18.6f; // 4octect
+        float moyenne = 18.6f; // 4octects
         double prix = 1000000.7895; // 8octects
 
+        boolean status;
+        status = true; // status = false
         boolean etat = true;
         etat = false;
 
+        System.out.println("Bienvenue");
         System.out.println("intY" + " " + y);
         System.out.println("shortY " + shortY);
         System.out.println("byteY " + byteY);
@@ -24,6 +30,7 @@ public class Main {
         String salution = " Bonjour bienvenu chez ";
         String brand = "LOGONE";
         System.out.println( salution + " " + brand);
+*/
 
         //Les Opérations
         int a;
@@ -34,12 +41,14 @@ public class Main {
         int sustratXY = a - b;
         int multiplyXY = a * b;
         int divisionXY = a / b;
+        int moduloXY = a % b;
 
 
         System.out.println("la somme de x+y= " + sommeXY);
-        System.out.println("la soustraction de x+y= " + sustratXY);
-        System.out.println("la multiplication de x+y= " + multiplyXY);
-        System.out.println("la division de x+y= " + divisionXY);
+        System.out.println("la soustraction de x-y= " + sustratXY);
+        System.out.println("la multiplication de x*y= " + multiplyXY);
+        System.out.println("la division de x/y= " + divisionXY);
+        System.out.println("le modulo de x%y= " + moduloXY);
 
     }
 }
