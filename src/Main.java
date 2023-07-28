@@ -10,7 +10,7 @@ public class Main {
         var value = Math.random()*10;
 
         System.out.println(value);
-/*        if(value>5){
+        if(value>5){
             System.out.println("valeur sup à 5");
         }
 
@@ -35,7 +35,7 @@ public class Main {
                 else {
                     System.out.println("maxi");
                 }
-        }*/
+        }
 
 /*        //structures ternaire
         int a=12,b=10;
@@ -48,8 +48,6 @@ public class Main {
         }
 
         int valeur = a>b ? a : b;
-
-
 
         //switch .. case => selon .. cas
 
@@ -89,16 +87,15 @@ public class Main {
 
         }while(true);*/
 
-/*        int i = 1;
+        int i = 1;
 
         while (i <= 10){
             System.out.println(i);
             i++;
         }
-        */
         // Saisir une valeur avec Scanner
 
-/*        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         int nombre;
 
@@ -106,11 +103,10 @@ public class Main {
             System.out.println("entrez un nombre positif : ");
             nombre =  scanner.nextInt();
         }while (nombre <= 0);
-        */
         //for et foreach
 
         String[] noms = {"Theodore", "Kelly", "Serge", "Mintoua"}; //4
-        for ( int i = 0 ; i < noms.length ; i++)
+        for ( i = 0 ; i < noms.length ; i++)
         {
             System.out.println( noms[i] );
         }
@@ -120,5 +116,6 @@ public class Main {
         }
 
 
+        // classes et objets
     }
 }
