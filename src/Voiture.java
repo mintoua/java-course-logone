@@ -26,7 +26,6 @@ public class Voiture {
     //syntaxe de création d'une méthode
     // type_de_retour nom_de_la_methode( paramètres ) { }
     // void
-
     String avancer(double vitesse){
         return "avance avec une vitessse" + vitesse;
     }
