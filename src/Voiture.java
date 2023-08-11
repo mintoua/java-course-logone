@@ -3,24 +3,47 @@ import java.util.Scanner;
 public class Voiture {
 
     //Attributs
-    String couleur;
-    String marque;
-    double prix;
+    private String couleur;
+    private String marque;
+    private double prix;
 
 
     //Construteurs
-    Voiture()
-    {
 
+    public Voiture() {
     }
 
-    Voiture(String color, String marq, double price)
-    {
-        this.couleur = color;
-        this.marque = marq;
-        this.prix = price;
+    public Voiture(String couleur, String marque, double prix) {
+        this.couleur = couleur;
+        this.marque = marque;
+        this.prix = prix;
+    }
+    //Getters & Setters
+
+
+    public String getCouleur() {
+        return couleur;
     }
 
+    public void setCouleur(String couleur) {
+        this.couleur = couleur;
+    }
+
+    public String getMarque() {
+        return marque;
+    }
+
+    public void setMarque(String marque) {
+        this.marque = marque;
+    }
+
+    public double getPrix() {
+        return prix;
+    }
+
+    public void setPrix(double prix) {
+        this.prix = prix;
+    }
 
     //Méthodes
     //syntaxe de création d'une méthode

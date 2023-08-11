@@ -1,12 +1,14 @@
 public class Personne {
     // Attributs
-    String nom;
-    int age;
-    String adresse;
+    private String nom;
+    private int age;
+    private String adresse;
 
     // Constructeurs
     Personne(){
-
+        this.nom = "default name";
+        this.age = 0;
+        this.adresse = "default adresse";
     }
      Personne(String nom, int age, String adresse) {
         this.nom = nom;
@@ -14,15 +16,48 @@ public class Personne {
         this.adresse = adresse;
     }
 
+    //Accesseurs = Getters
+    public String getNom() {
+        return nom;
+    }
+
+    public int getAge() {
+
+        return age;
+    }
+
+    public String getAdresse() {
+
+        return adresse;
+    }
+
+    //Modificateurs == Setters
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setAdresse(String adresse) {
+        this.adresse = adresse;
+    }
+
+
+
+
     // Méthode pour afficher les informations
-     void afficherInfo() {
+    public void afficherInfo() {
         System.out.println("Nom : " + nom);
         System.out.println("Âge : " + age);
         System.out.println("Adresse : " + adresse);
     }
 
     // Méthode pour dire bonjour
-     void direBonjour() {
+    public void direBonjour() {
+        afficherInfo();
         System.out.println("Bonjour, je m'appelle " + nom);
     }
+
 }
