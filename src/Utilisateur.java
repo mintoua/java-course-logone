@@ -5,9 +5,6 @@ public class Utilisateur {
     //Attributs
     String nom, prenom, email;
     int age;
-
-
-
     Utilisateur(){
         this.nom = "John";
         this.prenom =  "Doe";

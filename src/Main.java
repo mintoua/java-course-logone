@@ -4,8 +4,8 @@ public class Main {
         System.out.println("Bienvenu chez LOGONE DIGITALE");
         System.out.println("Ceci est juste un projet sur la branche seance_5");
         //Instances de la classe Voiture
- /*       Voiture voiture1 = new Voiture();
-        Voiture voiture2 = new Voiture("blue","mercedez",50000);*/
+        Voiture voiture1 = new Voiture();
+        Voiture voiture2 = new Voiture("blue","mercedez",50000);
         Utilisateur user1 = new Utilisateur();
         Utilisateur user2 = new Utilisateur("mta", "tpkd", "mta@gmail.com", 45);
         Utilisateur user3 = new Utilisateur("nankap", "serge");
