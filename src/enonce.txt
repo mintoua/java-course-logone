@@ -1,0 +1,26 @@
+Instructions :
+
+Créez une classe Compte.CompteBancaire avec
+les attributs suivants :
+
+numeroCompte (String)
+titulaire (String)
+solde (double)
+Définissez un constructeur pour initialiser les attributs.
+
+Ajoutez des méthodes à la classe Compte.CompteBancaire :
+deposer(double montant) : permet de déposer de l'argent sur le compte.
+retirer(double montant) : permet de retirer de l'argent du compte
+(vérifiez que le solde est suffisant).
+
+Créez une sous-classe Compte.CompteEpargne qui hérite de Compte.CompteBancaire.
+ Ajoutez un attribut tauxInteret (double) qui représente le taux d'intérêt du compte épargne.
+
+Redéfinissez la méthode deposer dans la classe Compte.CompteEpargne
+pour ajouter un intérêt au solde en fonction du taux d'intérêt.
+
+Créez une classe GestionnaireComptes qui contient la méthode main :
+
+Instanciez deux objets Compte.CompteBancaire et Compte.CompteEpargne.
+Effectuez des opérations de dépôt et de retrait sur les comptes.
+Affichez les informations des comptes après les opérations.
