@@ -11,6 +11,8 @@ public class GestionnaireComptes {
                 "Mta",
                 1000000
         );
+
+        //explication des setters et getters
         CompteBancaire compteBancaireDefault = new CompteBancaire();
 /*        System.out.println(compteBancaireDefault.toString());
         compteBancaireDefault.setNumeroCompte("002BN");
