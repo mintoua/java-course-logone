@@ -27,6 +27,7 @@ public class CompteBancaire
         this.solde = solde;
     }
 
+
     public void deposer(double montant){
         this.solde += montant;
         System.out.println("Dépôt de " + montant + "effectué.");
