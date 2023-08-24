@@ -43,11 +43,10 @@ public class Main {
         ///retirer de la List
         etudiantList.remove(etudiant1);
         etudiantList.remove(1);
-/*
+        /// Parcourir avec foreach
         for (Etudiant etudiant: etudiantList){
             etudiant.afficherInfos();
         }
-*/
 
         /// Interface Set
         /// Class HashSet
@@ -110,15 +109,20 @@ public class Main {
 
         System.out.println(maMap.containsValue("Quatre"));
 
+        // recuperer la set des cles d'une Map
         Set<Integer> mesCles = maMap.keySet();
+        //recuperer la Collection de l'ens des valeurs
         Collection<String> mesValeurs = maMap.values();
+
         System.out.println(mesCles);
         System.out.println(mesValeurs);
         System.out.println(maMap.size());
+
+        // retirer un element dans une Map
         maMap.remove(1);
         maMap.remove(2,"Deux");
 
-        // parcourir
+        // parcourir une Map
         for (Map.Entry<Integer,String> element : maMap.entrySet())
         {
             System.out.println(element.getKey() + " : " + element.getValue());
