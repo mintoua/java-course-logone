@@ -5,9 +5,11 @@ public class Main {
         System.out.println("Bienvenu chez LOGONE DIGITALE");
         System.out.println("Ceci est juste un projet sur la branche seance8 - Collections");
 
-/*        String noms[] = new String[10];//taille
+/*
+      String noms[] = new String[10]; //taille
         noms[0] = "Mta";
-        int[] notes = new int[10];*/
+        int[] notes = new int[10];
+*/
 
         ///Interface List
         /// Class ArrayList
@@ -27,16 +29,16 @@ public class Main {
         etudiantList.add(etudiant1);
         etudiantList.add(etudiant2);
 
-        System.out.println("************** First display******************");
+     //   System.out.println("************** First display******************");
         /// taille d'une collection ArrayList
         int tailleDeMaListe = etudiantList.size();
 
         /// Parcourir avec foreach
-/*        for (Etudiant etudiant: etudiantList){
-            etudiant.afficherInfos();
-        }*/
+        for (Etudiant currentEtudiant: etudiantList){
+            currentEtudiant.afficherInfos();
+        }
 
-        System.out.println("******* Second display after remove");
+    //    System.out.println("******* Second display after remove");
 
         ///retirer de la List
         etudiantList.remove(etudiant1);
@@ -47,61 +49,81 @@ public class Main {
         }
 */
 
-
         /// Interface Set
         /// Class HashSet
         Set<Etudiant> etudiantSet = new HashSet<>();
         etudiantSet.add(etudiant1);
         etudiantSet.add(etudiant2);
-        for (Etudiant etudiant: etudiantSet){
+
+/*        for (Etudiant etudiant: etudiantSet){
             etudiant.afficherInfos();
-        }
+        }*/
 
 
-/*        ///Classe ArrayList
-        ArrayList<String> list = new ArrayList<>();
-        list.add("Java");
-        list.add("PHP");
-        list.add("Python");
-        list.add("Pascal");
-        System.out.println(list);
+        //Interface Map
+        //Key => Value
+        // 1 => "Un"
+        // 2 => "Deux"
+        // 3 => "Trois"
+         // Etd1 => note[12,23,52]
+        //  Etd2 => note[12,23,52]
 
-        ///Classe LinkedList
-        LinkedList<String> lk = new LinkedList<String>();
-        lk.add("Java");
-        lk.add("PHP");
-        lk.add("Python");
-        lk.add("Pascal");
-        System.out.println(lk);
+        // créer une Map
+        ///Classe HashMap
+        Map<Integer,String> maMap = new HashMap<>();
+        Map<String,String> strStr = new HashMap<>();
+        Map<String,int[]> notes = new HashMap<>();
 
-        ///Interface Set
-        Set <String> hashSet = new HashSet<String>();
-        Set <String> linkedHashSet = new LinkedHashSet<String>();
-        Set <String> treeSet = new TreeSet<String>();
+        int[] note1 = {12,13,14};
+        int [] note2 = {15,18,8};
+        notes.put("181JME50026",note1);
+        notes.put("181JME4563",note2);
 
-        ///Classe HashSet
-        HashSet<String> hash = new HashSet<>();
-        hash.add("Java");
-        hash.add("PHP");
-        hash.add("Python");
-        hash.add("Pascal");
-        System.out.println(hash);
+        ArrayList<Etudiant> listEtuds = new ArrayList<>();
 
-        ///Interface Map
-        Map<String,String> myHashMap = new HashMap<>();
-        Map<Integer,String> hashTableMap = new TreeMap<>();
+        Map<String,Double> noteEtudiant1 = new HashMap<>();
+        noteEtudiant1.put("Math",12.0);
+        noteEtudiant1.put("Chimie",15.0);
+        noteEtudiant1.put("SVT",11.0);
+        noteEtudiant1.put("Physique",13.0);
 
-        ///Classe HashMap / TreeMap (trie selon la valeur)
-        HashMap<Integer,String> maMap = new HashMap<Integer, String>();
-        maMap.put(1,"un");
-        maMap.put(2,"deux");
-        maMap.put(3,"trois");
-        Set<Integer> cleSet = maMap.keySet();
-        Collection<String> valeursSet = maMap.values();
+        Map<String,Double> noteEtudiant2 = new HashMap<>();
+        noteEtudiant2.put("Math",12.0);
+        noteEtudiant2.put("Chimie",15.0);
+        noteEtudiant2.put("SVT",11.0);
+        noteEtudiant2.put("Physique",13.0);
+
+        Map<Etudiant,Map> etudiantMapMap = new HashMap<>();
+        etudiantMapMap.put(etudiant1,noteEtudiant1);
+        etudiantMapMap.put(etudiant2,noteEtudiant2);
+
+
+        Map<ArrayList,int[]> arrayListMap = new HashMap<>();
+        arrayListMap.put(listEtuds,note1);
+        // arrayListMap
+        // Cle => Valeur
+
+        // inserer dans une Map
+        maMap.put(1,"Un");
+        maMap.put(2,"Deux");
+        maMap.put(3,"Trois");
+
+        System.out.println(maMap.containsValue("Quatre"));
+
+        Set<Integer> mesCles = maMap.keySet();
+        Collection<String> mesValeurs = maMap.values();
+        System.out.println(mesCles);
+        System.out.println(mesValeurs);
+        System.out.println(maMap.size());
+        maMap.remove(1);
+        maMap.remove(2,"Deux");
+
+        // parcourir
         for (Map.Entry<Integer,String> element : maMap.entrySet())
         {
             System.out.println(element.getKey() + " : " + element.getValue());
-        }*/
+        }
+
 
     }
 }

@@ -1,6 +1,7 @@
 public class Etudiant {
 
     private String nom, prenom, matricule;
+    private int notes[];
 
     public Etudiant() {
     }
